@@ -1,0 +1,27 @@
+[
+  {
+    "dtc": "P0001",
+    "title": "Régulateur system test",
+    "system": "Fuel",
+    "severity": 1,
+    "model_code": "9-3",
+    "criteria_activation": "Exemple de critères d'activation",
+    "fault_criteria": "Exemple de critères de défaut",
+    "system_reaction": "Exemple de réaction du système",
+    "harness_checks": "Exemple de contrôles faisceau",
+    "diag_help": "Exemple d'aide diag"
+  },
+  {
+    "dtc": "C0490-01",
+    "title": "Brake pressure sensor",
+    "system": "ABS",
+    "severity": 2,
+    "model_code": ["9-5", "9-3"],
+    "criteria_activation": "Test sensors input",
+    "fault_criteria": "Brake pressure low",
+    "system_reaction": "Warning light",
+    "harness_checks": "Check harness connectors",
+    "diag_help": "Inspect brake lines",
+    "oem_procedure_url": "https://z90.pl/saab/dtc/C0490-01"
+  }
+]
