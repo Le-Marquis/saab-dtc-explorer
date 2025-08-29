@@ -145,7 +145,7 @@ export default function App() {
 
   // Load from /public/data/dtc-index.json if present
   useEffect(() => {
-    fetch("/data/dtc-index.json")
+    fetch("data/dtc-index.json")
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setData)
       .catch(() => setData(DEMO_DATA));
