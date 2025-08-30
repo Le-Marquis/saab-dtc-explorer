@@ -1,0 +1,115 @@
+/* Minimal CSS for Saab DTC Explorer dark UI */
+
+body {
+  background-color: #111827;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Typography */
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-lg { font-size: 1.125rem; }
+.text-2xl { font-size: 1.5rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.font-mono { font-family: monospace; }
+
+/* Colors */
+.text-white { color: #ffffff; }
+.text-black { color: #000000; }
+.text-gray400 { color: #9ca3af; }
+.text-gray500 { color: #6b7280; }
+.text-blue400 { color: #60a5fa; }
+.text-blue300 { color: #93c5fd; }
+.bg-gray-900 { background-color: #111827; }
+.bg-black60 { background-color: rgba(0, 0, 0, 0.6); }
+.bg-white5 { background-color: rgba(255, 255, 255, 0.05); }
+.bg-white10 { background-color: rgba(255, 255, 255, 0.10); }
+.bg-white15 { background-color: rgba(255, 255, 255, 0.15); }
+.bg-red600-80 { background-color: rgba(220, 38, 38, 0.8); color: #ffffff; }
+.bg-yellow500-80 { background-color: rgba(234, 179, 8, 0.8); color: #000000; }
+.bg-green600-80 { background-color: rgba(22, 163, 74, 0.8); color: #ffffff; }
+.bg-gray600-80 { background-color: rgba(75, 85, 99, 0.8); color: #ffffff; }
+
+/* Border */
+.border { border-width: 1px; }
+.border-white10 { border-color: rgba(255, 255, 255, 0.1); }
+.border-white15 { border-color: rgba(255, 255, 255, 0.15); }
+
+/* Rounded corners */
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* Padding and margin */
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.py-0-5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-1-5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-8 { margin-top: 2rem; }
+.ml-auto { margin-left: auto; }
+
+/* Gap and grid/flex */
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 768px) {
+  .md-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.w-full { width: 100%; }
+.max-w-lg { max-width: 32rem; }
+.min-w-250 { min-width: 250px; }
+.flex-1 { flex: 1 1 0%; }
+.cursor-pointer { cursor: pointer; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+
+/* Hover states */
+.hover-bg-white10:hover { background-color: rgba(255, 255, 255, 0.10); }
+.hover-bg-white15:hover { background-color: rgba(255, 255, 255, 0.15); }
+.hover-text-blue300:hover { color: #93c5fd; }
+
+/* Underline and outline */
+.underline { text-decoration: underline; }
+.outline-none { outline: none; }
+
+/* Tailwind class aliases */
+.min-w-\\[250px\\] { min-width: 250px; }
+.bg-white\\/5 { background-color: rgba(255, 255, 255, 0.05); }
+.bg-white\\/10 { background-color: rgba(255, 255, 255, 0.10); }
+.bg-white\\/15 { background-color: rgba(255, 255, 255, 0.15); }
+.bg-black\\/60 { background-color: rgba(0, 0, 0, 0.6); }
+.bg-red-600\\/80 { background-color: rgba(220, 38, 38, 0.8); color: #ffffff; }
+.bg-yellow-500\\/80 { background-color: rgba(234, 179, 8, 0.8); color: #000000; }
+.bg-green-600\\/80 { background-color: rgba(22, 163, 74, 0.8); color: #ffffff; }
+.bg-gray-600\\/80 { background-color: rgba(75, 85, 99, 0.8); color: #ffffff; }
+.border-white\\/10 { border-color: rgba(255, 255, 255, 0.1); }
+.border-white\\/15 { border-color: rgba(255, 255, 255, 0.15); }
+.hover\\:bg-white\\/10:hover { background-color: rgba(255, 255, 255, 0.10); }
+.hover\\:bg-white\\/15:hover { background-color: rgba(255, 255, 255, 0.15); }
+.hover\\:text-blue-300:hover { color: #93c5fd; }
+.text-gray-400 { color: #9ca3af; }
+.text-gray-500 { color: #6b7280; }
+.text-blue-400 { color: #60a5fa; }
+.text-blue-300 { color: #93c5fd; }
+.py-0\\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.py-1\\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
